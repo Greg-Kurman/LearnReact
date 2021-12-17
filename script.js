@@ -1,5 +1,23 @@
-const ans = [];
+const NumberOfFilms = +prompt("сколько фильмов ты посмотрел?", "")
 
-const category = "toys";
+const PersonalMoviesBD = {
+    count: NumberOfFilms,
+    movies: {},
+    actors: {},
+    genres: [],
+    privat: false
 
-console.log(`goodgame.tomsk/${category}/1`);
+}
+
+const a = prompt("название фильма?", ""),
+        b = prompt("актер?", ""),
+        c = prompt("оценка фильма?", ""),
+        d = prompt("оценка актера?", "");
+
+
+PersonalMoviesBD.actors = a;
+PersonalMoviesBD.genres = b;
+PersonalMoviesBD.movies[a] = c;
+PersonalMoviesBD.movies[b] = d;
+
+console.log(PersonalMoviesBD);
