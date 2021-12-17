@@ -1,23 +1,33 @@
-const NumberOfFilms = +prompt("сколько фильмов ты посмотрел?", "")
+"use strict";
 
-const PersonalMoviesBD = {
-    count: NumberOfFilms,
-    movies: {},
-    actors: {},
-    genres: [],
-    privat: false
+if (4 == 9) {
+    console.log("ok!");
+} else {
+    console.log("error");
+}
+const num = 50;
 
+if(num < 49){
+    console.log("error")
+} else if (num > 100) {
+    console.log("error")
+} else {
+    console.log("ok!")
 }
 
-const a = prompt("название фильма?", ""),
-        b = prompt("актер?", ""),
-        c = prompt("оценка фильма?", ""),
-        d = prompt("оценка актера?", "");
+(num == 50)? console.log("ok") : console.log("error");
 
 
-PersonalMoviesBD.actors = a;
-PersonalMoviesBD.genres = b;
-PersonalMoviesBD.movies[a] = c;
-PersonalMoviesBD.movies[b] = d;
+const lol = '19';
 
-console.log(PersonalMoviesBD);
+
+switch(lol) {
+    case '20':
+        console.log("error")
+        break;
+    case '192':
+        console.log('ok')
+        break;
+    default:
+        console.log( "not eat");
+}
