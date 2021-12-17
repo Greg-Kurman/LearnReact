@@ -33,16 +33,41 @@ switch (lol) {
 }
 
 
-let i = 3;
-
-for (let i = 3; i > 10; i++) {
-   console.log(i)
+for (let i = 0; i < 2; i++) {
+    console.log("god");
 }
 
+
+const expression = function (a, b) {
+    return console.log(a + b);
+}
+
+expression(2,6)
+
+
+
+
+declaration(4, 5)
+
+function declaration(d, g) {
+    y = d + g
+    console.log(y);
+}
+
+
+const calc = (a, b) =>{
+ return a +b
+}  
+
+console.log(calc(2,6))
 
 
 
 
 const test = "test text ";
 
-console.log(test.toUpperCase())
+console.log(test.slice(4, 9))
+
+
+const nump = 12.2;
+console.log(Math.round(nump))
