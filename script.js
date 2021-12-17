@@ -1,5 +1,34 @@
 "use strict";
 
+let NumberOfFilms = {
+    genres: []
+}
+
+
+function start() {
+    for (let i = 1; i <= 3; i++) {
+        NumberOfFilms.genres[i - 1] = prompt(`Какой жанр нравится, вопрос под номерном ${i}`);
+    }
+
+}
+
+start()
+
+console.log(NumberOfFilms)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 if (4 == 9) {
     console.log("ok!");
 } else {
@@ -42,7 +71,7 @@ const expression = function (a, b) {
     return console.log(a + b);
 }
 
-expression(2,6)
+expression(2, 6)
 
 
 
@@ -55,11 +84,11 @@ function declaration(d, g) {
 }
 
 
-const calc = (a, b) =>{
- return a +b
-}  
+const calc = (a, b) => {
+    return a + b
+}
 
-console.log(calc(2,6))
+console.log(calc(2, 6))
 
 
 
