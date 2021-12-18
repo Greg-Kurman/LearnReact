@@ -35,11 +35,13 @@ kek2()
 
 
 function learnJS(lang, callback) {
-    setTimeout(function(){console.log(`${lang}`)},5000)
+    setTimeout(function () {
+        console.log(`${lang}`)
+    }, 5000)
     callback()
 };
 
-learnJS("english", function() {
+learnJS("english", function () {
     console.log("it's callback")
 })
 
@@ -118,3 +120,46 @@ console.log(test.slice(4, 9))
 
 const nump = 12.2;
 console.log(Math.round(nump))
+
+
+const website = {
+    name: 'good',
+    width: 1024,
+    hight: 1024,
+    border: {
+        bg: 'red',
+        fr: 'dotted'
+
+    },
+    makeTest: function () {
+        console.log("test")
+    }
+}
+
+website.makeTest()
+console.log(Object.keys(website).length)
+
+
+for (let key in website) {
+    if (typeof (website[key]) === 'object') {
+        for (let i in website[key]) {
+            console.log(`свойство ${i}`, `имеет значение ${website[key][i]}`)
+        }
+
+    } else {
+        console.log(`свойство ${key}`, `имеет значение ${website[key]}`)
+    }
+
+}
+
+
+const arr = [2, 4, 5, 6, 7]
+
+arr.forEach(function(item, i , arr){
+        console.log(`позиция ${i+1} в ней значение ${ item} в массиве${arr}`)
+})
+
+
+for (let i = 0; i < arr.length; i++) {
+    console.log(arr[i])
+}
