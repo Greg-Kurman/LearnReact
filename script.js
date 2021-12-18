@@ -18,12 +18,30 @@ console.log(NumberOfFilms)
 
 
 
+let kek = function () {
+    return setTimeout(function () {
+        console.log("kek")
+    }, 500)
+}
+
+
+let kek2 = function () {
+    return console.log("kek2")
+}
+
+kek()
+kek2()
 
 
 
+function learnJS(lang, callback) {
+    setTimeout(function(){console.log(`${lang}`)},5000)
+    callback()
+};
 
-
-
+learnJS("english", function() {
+    console.log("it's callback")
+})
 
 
 
