@@ -232,6 +232,8 @@ const solder = {
     armor : 100
 }
 
-const max = Object.create(solder)
+const max = {}
+
+Object.setPrototypeOf(max,solder)
 
 console.log(max.healht)
