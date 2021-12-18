@@ -153,13 +153,85 @@ for (let key in website) {
 }
 
 
-const arr = [2, 4, 5, 6, 7]
+const arr = [2, 34, 5, 56, 7]
 
-arr.forEach(function(item, i , arr){
-        console.log(`позиция ${i+1} в ней значение ${ item} в массиве${arr}`)
+arr.sort(compare)
+
+function compare(a, b) {
+    return a - b
+}
+console.log(arr)
+
+arr.forEach(function (item, i, arr) {
+    console.log(`позиция ${i+1} в ней значение ${ item} в массиве${arr}`)
 })
 
 
 for (let i = 0; i < arr.length; i++) {
     console.log(arr[i])
 }
+
+
+
+const obj = {
+    a: 10,
+    b: 5
+}
+
+const add = {
+    c: 12
+}
+
+const clone = Object.assign({}, add)
+
+console.log(clone)
+
+
+
+const oldarr = ['2', '4', '5', '6'];
+
+const newArr = oldarr.splice()
+
+newArr[0] = [2,3,5];
+
+console.log(newArr)
+console.log(oldarr)
+
+
+const video = ['youtube', 'vimeo'],
+    vk = ['message', 'picture'],
+    internet = [...video, ...vk, 'js']
+
+
+console.log(internet)
+
+const q = {
+    a: 2,
+    b: 3
+}
+
+
+const newQ = {...q}
+console.log(newQ)
+
+function copy(main) {
+    let objCopy = {}
+    for (let key in main) {
+        objCopy[key] = main[key]
+    }
+    return objCopy
+}
+
+const CloneObj = copy(obj)
+
+console.log(CloneObj)
+
+
+const solder = {
+    healht : 100,
+    armor : 100
+}
+
+const max = Object.create(solder)
+
+console.log(max.healht)
